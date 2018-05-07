@@ -125,7 +125,7 @@ tables:
 {% for host in groups.Web_Servers %}
     - - '0'
       - '{{ host }}'
-      - '80'
+      - "{{ pool_port }}"
       - '0'
       - '1'
       - '0'
